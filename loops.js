@@ -4,7 +4,7 @@ console.log("helloworld")
  // while loop
  let a = 0;
  while (a < 10){
-    colsole.log(a)
+    console.log(a)
     a++
  }
 
@@ -20,3 +20,35 @@ console.log("helloworld")
     b++
  }
  console.log(res)
+
+
+
+ // do while loop
+//  let =0;
+//  do {
+//     console.log(arr[d.length]);
+//     c++
+//  }while(c <arr.length)
+
+
+// for loop
+// for(initialization; CSSConditionRule; increment/decreament){
+//     //expression
+// }
+let arr2 =[
+        "abley",
+        "back",
+        "acghy",
+        "balck",
+        "bank",
+        "aery",
+        "bark",
+        "agly"
+]
+let res2 = [];
+for ( let i = 0; i < arr2.length; i++){
+    if (arr2[i].endsWith("k")){
+        res2.push(arr2[i]);
+
+    }
+}console.log(res2)
