@@ -52,3 +52,23 @@ for ( let i = 0; i < arr2.length; i++){
 
     }
 }console.log(res2)
+
+// of of looop
+ for( let arr of arr2){
+    if (arr.endsWith("k")) console.log(arr)
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
