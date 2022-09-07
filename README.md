@@ -6,5 +6,6 @@
  - [x] functions
  - [x] loops
  - [x] functions
- - [ ] conditional.js
+ - [x] scopes
+ - [x] conditional.js
 this repo is for my Javascript class in NIIT
