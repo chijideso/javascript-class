@@ -1,9 +1,10 @@
 # javascript-class
  ## topics
  
- - {variables
- - basics oprators
- - functions
- - loops
- - functions
+ - [x] variables
+ - [x] basics oprators
+ - [x] functions
+ - [x] loops
+ - [x] functions
+ - [ ] conditional.js
 this repo is for my Javascript class in NIIT
