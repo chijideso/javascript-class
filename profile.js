@@ -94,5 +94,14 @@ var voxel = {x: 3.6, y: 2.4, z: 3.5};
     var y = voxel.y;
     var z = voxel.z;
     const { x : a, y : b, z : c} =voxel;
-     console.log(x,y,z);
+    //  console.log(x,y,z);
+
+    function nag(num) {
+        if(num <= -1){
+            console.log(true)} else {
+                console.log(false);
+            }
+    }
+    nag(-2);
+    nag(4)
 
