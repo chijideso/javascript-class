@@ -1,6 +1,8 @@
 # javascript-class
  ## topics
+ 
  - {variables
+ - basics oprators
  - functions
  - loops
  - functions
