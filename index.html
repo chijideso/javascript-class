@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +13,131 @@
     <!-- <script src="loops.js"></script> -->
     <!-- <script src="conditional.js"></script> -->
     <script src="scope.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"
+        integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="./css/lightslider.css">
+        <script src="./js/lightslider.js"></script>
 </head>
+
 <body>
-    <h1>welcome  to javascript</h1>
-   
+    <h1>welcome to javascript</h1>
+    <section id="responsive" class="cs-hidden">
+        <div class="item-a"></div>
+        <div class="item-b"></div>
+        <div class="item-c"></div>
+        <div class="item-d"></div>
+        <div class="item-e"></div>
+    </section>
+    <style>
+        section{
+            width: 100%;
+        }
+        div {
+            height: 300px;
+            width: 300px;
+        }
+
+        div:nth-child(1) {
+            background-color: brown;
+        }
+
+        div:nth-child(2) {
+            background-color: red;
+        }
+
+        div:nth-child(3) {
+            background-color: yellow;
+        }
+
+        div:nth-child(4) {
+            background-color: blue;
+        }
+
+        div:nth-child(5) {
+            background-color: green;
+        }
+
+        .cS-hidden {
+            height: 1px;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            overflow: hidden;
+        }
+
+        .item-a {
+            width: 200px;
+        }
+
+        .item-b {
+            width: 340px;
+        }
+
+        .item-c {
+            width: 290px;
+        }
+
+        .item-d {
+            width: 220px;
+        }
+
+        .item-e {
+            width: 350px;
+        }
+
+        @media (max-width: 768px) {
+            .item-a {
+                width: 100px;
+            }
+
+            .item-b {
+                width: 240px;
+            }
+
+            .item-c {
+                width: 190px;
+            }
+
+            .item-d {
+                width: 120px;
+            }
+
+            .item-e {
+                width: 250px;
+            }
+        }
+    </style>
+    <script>
+          $(document).ready(function() {
+    $('#responsive').lightSlider({
+        item:4,
+        loop:false,
+        slideMove:2,
+        easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+        speed:600,
+        responsive : [
+            {
+                breakpoint:800,
+                settings: {
+                    item:3,
+                    slideMove:1,
+                    slideMargin:6,
+                  }
+            },
+            {
+                breakpoint:480,
+                settings: {
+                    item:2,
+                    slideMove:1
+                  }
+            }
+        ]
+    });  
+  });
+    </script>
 </body>
+
 </html>
